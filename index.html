@@ -334,8 +334,7 @@
     </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="foot">
+        <div class="container foot">
             <div class="footerLogotipe">
               <a href="./index.html" class="logo-footer"><span class="web-footer">Web</span>Studio</a>
               <p class="footer-text">Increase the flow of customers and<br>sales for your business with digital<br>marketing & growth solutions.
@@ -375,16 +374,15 @@
               </ul>
             </div>
             <div class="subscribe">
-                <form>
-                    <label for="mail" class="media-title">Social media</label>
-                    <div class="subscribe-form">
-                        <input type="mail" name="mail" id="mail" class="subscribe-mail" placeholder="E-mail"/>
+                <p class="media-title">Subscribe</p>
+                <form class="form-footer">
+                    <lable class="subscribe-form">
+                        <input type="email" name="mail" id="mail" class="subscribe-mail" placeholder="E-mail"/>
                         <button type="submit" class="btn-subscribe">Subscribe<svg class="iconSend" width="24" height="20">
                                 <use href="./images/icons.svg#icon-icon-send"></use>
                             </svg></button>
-                    </div>
+                        </lable>
                 </form>
-            </div>
             </div>
         </div>
     </footer>
@@ -402,7 +400,7 @@
                 <label class="modal-lable">
                     <span class="for-lable">Name</span>
                     <div class="for-input">
-                        <input type="text" name="username" class="input" placeholder="Поздравляю ВАС"/>
+                        <input type="text" name="username" class="input" />
                         <svg class="input-icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
@@ -412,7 +410,7 @@
                 <label class="modal-lable">
                     <span class="for-lable">Phone</span>
                     <div class="for-input">
-                        <input type="tel" name="phone_number" class="input" placeholder="с наступающим"/>
+                        <input type="tel" name="phone_number" class="input" />
                         <svg class="input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
@@ -422,7 +420,7 @@
                 <label class="modal-lable">
                     <span class="for-lable">Email</span>
                     <div class="for-input">
-                        <input type="email" name="email" class="input" placeholder="НОВЫМ ГОДОМ"/>
+                        <input type="email" name="email" class="input" />
                         <svg class="input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
@@ -431,13 +429,13 @@
 
                 <label class="modal-lable">
                     <span class="for-lable">Comment</span>
-                    <textarea name="comment" rows="5" placeholder="Text input--> Улыбнитесь)))" class="textarea input"></textarea>
+                    <textarea name="comment" rows="5" placeholder="Text input" class="textarea input"></textarea>
                 </label>
 
                 <label class="for-checkbox">
                     <input class="checkbox" type="checkbox" name="accept_check" value="accept_check" />
                     <span class="checkbox_icon"></span>
-                    I accept the terms and conditions of the <span class="span-input">Privacy Policy</span>
+                    I accept the terms and conditions of the<span class="span-input">Privacy Policy</span>
                 </label>
 
                 <button type="submit" class="button primary btn submit">Send</button>

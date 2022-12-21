@@ -48,7 +48,7 @@ img {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.section-header.portfolio {
+.section-header {
     border-bottom: 2px solid var(--light-cloud);
 }
 .nav {
@@ -135,7 +135,8 @@ img {
     margin-left: auto;
 }
 .primary-contact {
-    display: block;
+    display: flex;
+    align-items: center;
     color: var(--body-text);
     text-decoration: none;
     padding-top: 24px;
@@ -371,7 +372,7 @@ img {
     color: var(--accent-color);
     margin-top: 16px;
     font-family: 'Roboto', sans-serif;
-    line-height: 24px;
+    line-height: 1.5;
     font-size: 16px;
     font-weight: 400;
 }
@@ -430,7 +431,7 @@ img {
     font-weight: 700;
     font-family: 'Roboto',sans-serif;
     font-size: 16px;
-    line-height: 1,5;
+    line-height: 1.5;
     cursor: pointer;
 }
 .iconSend {
@@ -468,13 +469,16 @@ img {
     color: var(--white);
     font-weight: 600;
     font-size: 16px;
-    line-height: 1,5;
+    line-height: 1.5;
     font-family: 'Roboto', sans-serif;
 
     cursor: pointer;
 }
 .subscribe {
-    margin-left: 80px;
+    margin-left: auto;
+}
+.form-footer {
+    display: flex;
 }
 .button {
    display: inline-block;
@@ -625,10 +629,17 @@ img {
 }
 .modal {
     position: absolute;
+
     width: 408px;
     height: 576px;
+
     top: 50%;
     left: 50%;
+
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 72px;
+
     transform: translate(-50%, -50%) scale(1) rotate(0deg);
     transition: transform var(--time-distribution); 
     background-color: var(--white);
@@ -636,16 +647,20 @@ img {
 .modal-close-btn {
     position: absolute;
     display: flex;
+
     justify-content: center;
     align-items: center;
+
     top: 24px;
     right: 24px;
 
     width: 24px;
     height: 24px;
+
     background: var(--border-button);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+
     padding: 0;
 
     transition: box-shadow var(--time-distribution);
@@ -661,9 +676,7 @@ img {
 
     width: 100%;
 
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 72px;
+    
 }
 
 .modal-lable {
@@ -672,7 +685,7 @@ img {
     display: flex;
     flex-direction: column;
      
-    
+    margin-bottom: 8px;
 }
 .for-input:focus-within > .input-icon {
     fill: var(--primary-brand);
@@ -687,6 +700,8 @@ img {
     margin-bottom: 4px;
 }
 .form-text {
+    text-align: center;
+
     color: var(--navy-biue);
     font-weight: 600;
     font-size: 16px;
@@ -707,10 +722,6 @@ img {
 
     transition: var(--time-distribution);
 }
-/* я это уберу ;) */
-.input::placeholder {
-    color: red;
-}
 
 
 .for-input:focus-within>.input {
@@ -719,7 +730,7 @@ img {
 .for-input {
     position: relative;
     
-    margin-bottom: 8px;
+    
 }
 
 .input-icon {
@@ -775,6 +786,9 @@ img {
 
     transition: var(--time-distribution);
 }
+.checkbox:focus + .checkbox_icon {
+    border-color: var(--primary-brand);
+}
 .checkbox:checked + .checkbox_icon {
     border: none;
     background-image: url('../images/click.svg');
@@ -797,6 +811,9 @@ img {
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    text-decoration:underline;
+
+    margin-left: 4px;
 }
 .submit {
     width: 170px;
