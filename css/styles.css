@@ -441,7 +441,6 @@ img {
     display: flex;
     align-items: center;
 
-    margin-top: 16px;
 }
 .subscribe-mail {
     padding-left: 16px;
@@ -479,6 +478,8 @@ img {
 }
 .form-footer {
     display: flex;
+
+    margin-top: 16px;
 }
 .button {
    display: inline-block;
@@ -660,6 +661,7 @@ img {
     background: var(--border-button);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    cursor: pointer;
 
     padding: 0;
 
